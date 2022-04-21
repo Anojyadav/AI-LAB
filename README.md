@@ -2,4 +2,13 @@
   This repo contains my work towards to Artifical Intelligence Algorithm 
   
 
-Hello
+- __Solving 8puzzle by Astar__
+  Using Two different Heuristics 
+
+- __Solving K-NearestNeighbour__
+  
+
+- __Solving Perceptraon__
+
+
+
