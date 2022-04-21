@@ -1,5 +1,5 @@
 # Welcome to my repo for AI-LAB
-  This repo contains my work towards to Artifical Intelligence Algorithm 
+  This repo contains Artifical Intelligence Algorithm 
   
 
 - __Solving 8puzzle using Astar Algorithm__
