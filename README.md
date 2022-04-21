@@ -8,7 +8,7 @@
 - __Solving K-NearestNeighbour__
   
 
-- __Solving Perceptraon__
+- __Solving Perceptron__
 
 
 
