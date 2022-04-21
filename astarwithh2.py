@@ -1,13 +1,13 @@
 import copy
 
 
-class a_star(object):
+class Astar():
     def __init__(self):
         self.goal = [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
         self.tree = []
         self.i = 0
 
-    def HEURISTIC_SEARCH(self, Start):
+    def heuristic_search(self, Start):
         NodeList = Start
         while True:
             self.i = self.i + 1
@@ -18,9 +18,9 @@ class a_star(object):
             NodeList = NodeList[1:]
             if Node["State"] == self.goal:
                 return 'Solution found', Node
-            NodeList = self.Sort_In(self.Successors(Node), NodeList)
+            NodeList = self.sort_in(self.successors(Node), NodeList)
 
-    def Sort_In(self, sn, n):
+    def sort_in(self, sn, n):
         sn.extend(n)
         sn.sort(key=lambda x: x['f'])
         return sn
@@ -47,7 +47,7 @@ class a_star(object):
                     h = h + 2 - j + abs(k - 1)
         return h
 
-    def Successors(self, y):
+    def successors(self, y):
         succ = []
         for j in range(3):
             for k in range(3):
@@ -101,7 +101,7 @@ class a_star(object):
 
 
 if __name__ == '__main__':
-    obj = a_star()
-    Start = [{'State': [[6, 4, 7], [8, 5, 0], [3, 2, 1]], 'g': 0, 'h': 8, 'f': 8, 'Parent': None}]
-    print(obj.HEURISTIC_SEARCH(Start))
+    obj = Astar()
+    start = [{'State': [[6, 4, 7], [8, 5, 0], [3, 2, 1]], 'g': 0, 'h': 8, 'f': 8, 'Parent': None}]
+    print(obj.heuristic_search(start))
     print('Number of iterations =', obj.i)
