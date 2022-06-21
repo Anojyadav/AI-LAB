@@ -5,7 +5,7 @@
 - __Solving 8puzzle using Astar Algorithm__
   Using Two different Heuristics 
 
-## astarwithh1.py - 
+### astarwithh1.py 
 Using heuristics h1 for solving the 8puzzle.
 
 f(s) = g(s) + h(s)
